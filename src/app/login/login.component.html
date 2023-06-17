@@ -1,0 +1,13 @@
+<div class="w-100 position-relative h-100 top-0 m-auto m-5 p-5">
+    <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+
+        <div class="mb-3">
+            <input type="email" formControlName="userId" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+        </div>
+        <div class="mb-3">
+            <input type="password" formControlName="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+
+        <button class="btn btn-primary w-100">Log In</button>
+    </form>
+</div>
